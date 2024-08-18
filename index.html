@@ -21,17 +21,62 @@
     <!-- tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-      
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .font-manrope {
+  font-family: "Manrope", system-ui;
+  font-optical-sizing: auto;
+  
+}
+
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!-- main content -->
+    <main class="font-manrope max-w-screen-xl mx-auto px-16 lg:px-28">
+      <!-- header content -->
+      <header class="md:flex lg:flex pt-10 mb-20">
+        <!-- text content -->
+        <div class="mb-20">
+          <h1 class="text-5xl md:text-6xl font-extrabold">It's good 
+            <br>
+            tea time at The 
+            <br>
+            Tea House</h1>
+          <br>
+          <p class="text-gray-500 w-3/4 font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+          <br>
+          <button class="font-bold text-xl bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white">
+            Explore More  <i class="fa-solid fa-arrow-right -rotate-45"></i>
+          </button>
+        </div>
+        <!-- image content -->
+        <div class="relative">
+          <div>
+            <img class="min-w-96" src="images/banner.png" alt="">
+          </div>
+          <!-- card -->
+           <div class="absolute top-60 left-24 md:top-60 md:left-28 lg:left-24 lg:top-64 flex items-center bg-white shadow-lg px-2 py-2 md:px-4 lg:py-3 rounded-lg">
+            <!-- star icon -->
+             <div><i class="fa-solid fa-star text-3xl text-amber-500"></i></div>
+             <!-- text -->
+             <div class="ml-1">
+              <h2 class="font-extrabold text-2xl">5.00</h2>
+              <p class="text-gray-500 text-xs">Trust Pilot Ratings</p>
+             </div>
+           </div>
+        </div>
+      </header>
+    </main>
+  </body>
 </html>
